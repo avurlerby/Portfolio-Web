@@ -3,5 +3,5 @@ WORKDIR /usr/src/app
 COPY ./Server .
 ENV NODE_ENV='dev'
 ENV PORT=8080
-RUN npm install
+RUN npm ci
 CMD [ "npm", "run", "serve" ]
