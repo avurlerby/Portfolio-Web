@@ -1,8 +1,8 @@
 FROM node:14-alpine as build
 WORKDIR /app
-COPY package*.json ./
+COPY ./Server .
 RUN npm ci
-COPY . ./
+COPY . .
 RUN npm run build
         
 FROM nginx:stable
