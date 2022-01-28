@@ -2,10 +2,8 @@ FROM node:alpine
 
 WORKDIR /app
 
-COPY package.json ./
+COPY ./Server .
 
 RUN npm install -g latest
-
-COPY . .
 
 CMD ["npm", "start"]
