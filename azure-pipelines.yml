@@ -13,7 +13,7 @@ variables:
   dockerRegistryServiceConnection: '589a5a0b-e443-4962-bdb2-a2b663b024fa'
   imageRepository: 'avurlerbyportfolioweb'
   containerRegistry: 'portfolioweb.azurecr.io'
-  appName: 'portfolio-web-dev'
+  appName: 'potfolio-web-dev'
   azureSubscription: 'Visual Studio Enterprise (44532ebc-5ff3-438f-aa57-281fab64be8d)'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
   tag: '$(Build.BuildId)'
