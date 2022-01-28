@@ -5,8 +5,8 @@
 trigger:
 - dev
   
-resources:
-- repo: self
+pool:
+  vmImage: ubuntu-18.04
   
 variables:
   # Container registry service connection established during pipeline creation
@@ -14,7 +14,7 @@ variables:
   imageRepository: 'avurlerbyportfolioweb'
   containerRegistry: 'portfolioweb.azurecr.io'
   appName: 'portfolio-web-dev'
-  azureSubscription: '44532ebc-5ff3-438f-aa57-281fab64be8d'
+  azureSubscription: 'Visual Studio Enterprise (44532ebc-5ff3-438f-aa57-281fab64be8d)'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
   tag: '$(Build.BuildId)'
   
