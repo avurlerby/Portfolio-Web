@@ -17,6 +17,7 @@ variables:
   azureSubscription: 'Visual Studio Enterprise (44532ebc-5ff3-438f-aa57-281fab64be8d)'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
   tag: '$(Build.BuildId)'
+  vmImageName: 'ubuntu-18.04'
   
 stages:
 - stage: Build
