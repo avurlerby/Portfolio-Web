@@ -1,5 +1,5 @@
-#!/usr/bin/
-    
+#!/bin/bash 
+echo "Print working Directory"    
 pwd
 cd ./Server
 set +x
