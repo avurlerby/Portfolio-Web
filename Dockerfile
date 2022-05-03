@@ -1,11 +1,9 @@
-FROM node:alpine
 
+FROM node:lts-alpine
+WORKDIR /Server
+RUN pwd && cd ./Server && set +x
 WORKDIR /app
-
-COPY package.json ./
-
-RUN npm install -g latest
-
 COPY . .
-
-CMD ["npm", "start"]
+RUN npm i --save --legacy-peer-deps
+EXPOSE ${PORT}
+CMD [ "npm", "start" ]
