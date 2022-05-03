@@ -1,4 +1,5 @@
-#!/bin/bash 
+#!/bin/bash
+ 
 echo "Print working Directory"    
 pwd
 cd ./Server
