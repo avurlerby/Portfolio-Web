@@ -1,14 +1,14 @@
 #!/usr/bin/
-    script {
-        dir("server") {
-sh script: """#!/bin/bash
+    
+pwd
+cd ./Server
 set +x
 cat <<EOT >> Dockerfile
 FROM node:lts-alpine
 WORKDIR /app
 COPY . .
 RUN npm i --save --legacy-peer-deps
-CMD [ "yarn", "serve" ]
+CMD [ "npm", "start" ]
 EXPOSE ${PORT}
 EOT"""
     }
